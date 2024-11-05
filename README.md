@@ -118,5 +118,55 @@
       console.log(result && typeof result === 'object' ? result : newInstance);
       ```
 
+       6. **Object's assign method:**
+
+      The `Object.assign` method is used to copy all the properties from one or more source objects and stores them into a target object.
+
+      The following code creates a new staff object by copying properties of his working company and the car he owns.
+
+      ```javascript
+      const orgObject = { company: 'XYZ Corp'};
+      const carObject = { name: 'Toyota'};
+      const staff = Object.assign({}, orgObject, carObject);
+      ```
+
+   7. **ES6 Class syntax:**
+
+      ES6 introduces class feature to create objects.
+
+      ```javascript
+      class Person {
+        constructor(name) {
+          this.name = name;
+        }
+      }
+
+      var object = new Person("Sudheer");
+      ```
+
+   8. **Singleton pattern:**
+
+      A Singleton is an object which can only be instantiated one time. Repeated calls to its constructor return the same instance. This way one can ensure that they don't accidentally create multiple instances.
+
+      ```javascript
+      var object = new (function () {
+        this.name = "Sudheer";
+      })();
+      ```
+
+      **[⬆ Back to Top](#table-of-contents)**
+
+2. ### What is a prototype chain
+
+   **Prototype chaining** is used to build new types of objects based on existing ones. It is similar to inheritance in a class based language. i.e, When you create an object using a constructor function or a class, the created object inherits properties from a prototype object.
+
+   The prototype on object instance is available through **Object.getPrototypeOf(object)** or **\_\_proto\_\_** property whereas prototype on constructor function is available through **Object.prototype**.
+
+   ![Screenshot](images/prototype_chain.png)
+
+   **[⬆ Back to Top](#table-of-contents)**
+
+
+
  
  
