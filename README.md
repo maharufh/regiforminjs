@@ -9,6 +9,18 @@
 | 2 | [What is a prototype chain](#what-is-a-prototype-chain) |
 | 3 | [what is hooks?](#what-is-hooks)|
 
+| 3 | [What is the difference between Call, Apply and Bind](#what-is-the-difference-between-call-apply-and-bind) |
+| 4 | [What is JSON and its common operations](#what-is-json-and-its-common-operations) |
+| 5 | [What is the purpose of the array slice method](#what-is-the-purpose-of-the-array-slice-method) |
+| 6 | [What is the purpose of the array splice method](#what-is-the-purpose-of-the-array-splice-method) |
+| 7 | [What is the difference between slice and splice](#what-is-the-difference-between-slice-and-splice) |
+| 8 | [How do you compare Object and Map](#how-do-you-compare-object-and-map) |
+| 9 | [What is the difference between == and === operators](#what-is-the-difference-between--and--operators) |
+| 10 | [What are lambda expressions or arrow functions](#what-are-lambda-expressions-or-arrow-functions) |
+| 11 | [What is a first class function](#what-is-a-first-class-function) |
+| 12 | [What is a first order function](#what-is-a-first-order-function) |
+| 13 | [What is a higher order function](#what-is-a-higher-order-function) |
+
 <!-- TOC_END -->
 
 <!-- QUESTIONS_START -->
