@@ -44,6 +44,79 @@
       ```javascript
       var object = Object();
       ```
+       3. **Object's create method:**
+
+      The `create` method of Object is used to create a new object by passing the specified prototype object and properties as arguments, i.e., this pattern is helpful to create new objects based on existing objects.
+      The second argument is optional and it is used to create properties on a newly created object.
+
+      The following code creates a new empty object whose prototype is null.
+
+      ```javascript
+      var object = Object.create(null);
+      ```
+      The following example creates an object along with additional new properties.
+
+      ```javascript
+      let vehicle = {
+        wheels: '4',
+        fuelType: 'Gasoline',
+        color: 'Green'
+      }
+      let carProps = {
+        type: {
+          value: 'Volkswagen'
+        },
+        model: {
+          value: 'Golf'
+        }
+      }
+
+      var car = Object.create(vehicle, carProps);
+      console.log(car);
+      ```
+
+   4. **Function constructor:**
+
+      In this approach, create any function and apply the new operator to create object instances.
+
+      ```javascript
+      function Person(name) {
+        this.name = name;
+        this.age = 21;
+      }
+      var object = new Person("Sudheer");
+      ```
+
+   5. **Function constructor with prototype:**
+
+      This is similar to function constructor but it uses prototype for their properties and methods,
+
+      ```javascript
+      function Person() {}
+      Person.prototype.name = "Sudheer";
+      var object = new Person();
+      ```
+
+      This is equivalent to creating an instance with Object.create method with a function prototype and then calling that function with an instance and parameters as arguments.
+
+      ```javascript
+      function func() {}
+
+      new func(x, y, z);
+      ```
+
+      **(OR)**
+
+      ```javascript
+      // Create a new instance using function prototype.
+      var newInstance = Object.create(func.prototype)
+
+      // Call the function
+      var result = func.call(newInstance, x, y, z),
+
+      // If the result is a non-null object then use it otherwise just use the new instance.
+      console.log(result && typeof result === 'object' ? result : newInstance);
+      ```
 
  
  
